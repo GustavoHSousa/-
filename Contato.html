@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        /*Fundo da página*/
+        body{
+            background-color: rgb(204, 149, 250);  
+        }
+        /*Configurações do formulário*/
+        form{
+            margin: 0 auto;
+            width: 400px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 8px;
+        }
+        /*Padronizando os campos*/
+        label{
+            display: inline-block;
+            width: 42px;
+        }
+        /*Adicionando arredondamento para o campo textarea*/
+        textarea{
+            border-radius: 8px;
+        }    
+        /*Centralização do titulo da pagina*/
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>    
+    <!--Criação do formulário para contato-->
+    <h1>&#128231 Entrar em contato</h1>
+    <form action="" method="get">  <!--Os dados preenchidos ficaram no topo da página-->
+        <label for="text">Nome:</label>
+        <input type="text" name="nome" required placeholder="Digite seu nome">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required placeholder="Digite seu email">
+        <br><br>
+        <label for="tel">Fone:</label>
+        <input type="tel" name="celular" placeholder="Telefone">
+        <br><br>
+        <label for="textarea">Mensagem:</label>
+        <br>
+        <textarea cols="30" rows="10" name="msg" placeholder="Mensagem"></textarea>
+        <br>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
